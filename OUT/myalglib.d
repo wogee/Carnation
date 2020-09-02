@@ -1,0 +1,9 @@
+.\out\myalglib.o: CODE\APP\MyAlgLib.c
+.\out\myalglib.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\myalglib.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\myalglib.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\out\myalglib.o: CODE\APP\App.h
+.\out\myalglib.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\myalglib.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\myalglib.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\myalglib.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h

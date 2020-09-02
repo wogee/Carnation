@@ -1,0 +1,12 @@
+.\out\os_cpu_c.o: CODE\OS\uCOS-II\Ports\os_cpu_c.c
+.\out\os_cpu_c.o: .\CODE\BOARD\LPC177x_8x\LPC177x_8x.h
+.\out\os_cpu_c.o: .\CODE\BOARD\CM3\core_cm3.h
+.\out\os_cpu_c.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\os_cpu_c.o: .\CODE\BOARD\CM3\core_cmInstr.h
+.\out\os_cpu_c.o: .\CODE\BOARD\CM3\core_cmFunc.h
+.\out\os_cpu_c.o: .\CODE\BOARD\LPC177x_8x\system_LPC177x_8x.h
+.\out\os_cpu_c.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\os_cpu_c.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\os_cpu_c.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\os_cpu_c.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\os_cpu_c.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h

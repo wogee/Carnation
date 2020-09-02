@@ -1,0 +1,11 @@
+.\out\nettask.o: CODE\APP\NET\NetTask.c
+.\out\nettask.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\nettask.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\nettask.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\nettask.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\nettask.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\nettask.o: .\CODE\APP\Para.h
+.\out\nettask.o: CODE\APP\NET\ethernet.h
+.\out\nettask.o: CODE\APP\NET\gprs.h
+.\out\nettask.o: CODE\APP\NET\NetTask.h
+.\out\nettask.o: .\CODE\BOARD\DRIVER\UART.h

@@ -1,0 +1,16 @@
+.\out\elmtask.o: CODE\APP\ElmTask.c
+.\out\elmtask.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\elmtask.o: CODE\APP\App.h
+.\out\elmtask.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\elmtask.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\elmtask.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\elmtask.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\elmtask.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\elmtask.o: CODE\APP\ElmTask.h
+.\out\elmtask.o: .\CODE\BOARD\DRIVER\RTC.h
+.\out\elmtask.o: .\CODE\BOARD\DRIVER\RS485.h
+.\out\elmtask.o: .\CODE\BOARD\DRIVER\UART.h
+.\out\elmtask.o: .\CODE\BOARD\DRIVER\Timer.h
+.\out\elmtask.o: .\CODE\BOARD\Board.h
+.\out\elmtask.o: CODE\APP\Para.h
+.\out\elmtask.o: CODE\APP\Myalglib.h

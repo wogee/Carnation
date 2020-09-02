@@ -1,0 +1,12 @@
+.\out\cardtask.o: CODE\APP\CardTask.c
+.\out\cardtask.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\cardtask.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\cardtask.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\cardtask.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\cardtask.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\cardtask.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\cardtask.o: .\CODE\APP\LIB\encrypt.h
+.\out\cardtask.o: .\CODE\BOARD\DRIVER\MT625.h
+.\out\cardtask.o: CODE\APP\CardTask.h
+.\out\cardtask.o: CODE\APP\Para.h
+.\out\cardtask.o: .\CODE\BOARD\DRIVER\UART.h

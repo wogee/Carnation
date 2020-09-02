@@ -1,0 +1,10 @@
+.\out\rtc.o: CODE\BOARD\DRIVER\RTC.c
+.\out\rtc.o: .\CODE\BOARD\Board.h
+.\out\rtc.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\rtc.o: .\CODE\BOARD\LPC177x_8x\LPC177x_8x.H
+.\out\rtc.o: .\CODE\BOARD\CM3\core_cm3.h
+.\out\rtc.o: .\CODE\BOARD\CM3\core_cmInstr.h
+.\out\rtc.o: .\CODE\BOARD\CM3\core_cmFunc.h
+.\out\rtc.o: .\CODE\BOARD\LPC177x_8x\system_LPC177x_8x.h
+.\out\rtc.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\out\rtc.o: CODE\BOARD\DRIVER\RTC.h

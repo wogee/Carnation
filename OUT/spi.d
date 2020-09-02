@@ -1,0 +1,9 @@
+.\out\spi.o: CODE\BOARD\DRIVER\SPI.c
+.\out\spi.o: .\CODE\BOARD\Board.h
+.\out\spi.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\spi.o: .\CODE\BOARD\LPC177x_8x\LPC177x_8x.H
+.\out\spi.o: .\CODE\BOARD\CM3\core_cm3.h
+.\out\spi.o: .\CODE\BOARD\CM3\core_cmInstr.h
+.\out\spi.o: .\CODE\BOARD\CM3\core_cmFunc.h
+.\out\spi.o: .\CODE\BOARD\LPC177x_8x\system_LPC177x_8x.h
+.\out\spi.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdio.h

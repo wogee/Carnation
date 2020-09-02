@@ -1,0 +1,9 @@
+.\out\can.o: CODE\BOARD\DRIVER\CAN.c
+.\out\can.o: .\CODE\BOARD\LPC177x_8x\LPC177x_8x.H
+.\out\can.o: .\CODE\BOARD\CM3\core_cm3.h
+.\out\can.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\can.o: .\CODE\BOARD\CM3\core_cmInstr.h
+.\out\can.o: .\CODE\BOARD\CM3\core_cmFunc.h
+.\out\can.o: .\CODE\BOARD\LPC177x_8x\system_LPC177x_8x.h
+.\out\can.o: .\CODE\BOARD\Board.h
+.\out\can.o: CODE\BOARD\DRIVER\CAN.h

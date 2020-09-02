@@ -1,0 +1,17 @@
+.\out\record.o: CODE\APP\Record.c
+.\out\record.o: CODE\APP\App.h
+.\out\record.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\record.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\record.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\record.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\record.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\record.o: .\CODE\BOARD\DRIVER\FRAM.h
+.\out\record.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\record.o: CODE\APP\ff.h
+.\out\record.o: CODE\APP\integer.h
+.\out\record.o: CODE\APP\ffconf.h
+.\out\record.o: CODE\APP\diskio.h
+.\out\record.o: CODE\APP\Record.h
+.\out\record.o: .\CODE\CONFIG\Cfg.h
+.\out\record.o: .\CODE\BOARD\DRIVER\UART.h
+.\out\record.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdio.h

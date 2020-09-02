@@ -1,0 +1,14 @@
+.\out\modem.o: CODE\BOARD\DRIVER\MODEM.c
+.\out\modem.o: .\CODE\BOARD\Board.h
+.\out\modem.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\modem.o: CODE\BOARD\DRIVER\MODEM.h
+.\out\modem.o: CODE\BOARD\DRIVER\GPIO.h
+.\out\modem.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\modem.o: CODE\BOARD\DRIVER\UART.h
+.\out\modem.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\modem.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\modem.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\modem.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\modem.o: .\CODE\APP\MyAlgLib.h
+.\out\modem.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\out\modem.o: CODE\BOARD\DRIVER\Timer.h

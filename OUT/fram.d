@@ -1,0 +1,11 @@
+.\out\fram.o: CODE\BOARD\DRIVER\FRAM.c
+.\out\fram.o: .\CODE\BOARD\Board.h
+.\out\fram.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\fram.o: CODE\BOARD\DRIVER\FRAM.h
+.\out\fram.o: CODE\BOARD\DRIVER\GPIO.h
+.\out\fram.o: CODE\BOARD\DRIVER\SPI.h
+.\out\fram.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\fram.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\fram.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\fram.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\fram.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h

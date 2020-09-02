@@ -1,0 +1,11 @@
+.\out\rs485.o: CODE\BOARD\DRIVER\RS485.c
+.\out\rs485.o: .\CODE\BOARD\Board.h
+.\out\rs485.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\rs485.o: CODE\BOARD\DRIVER\UART.h
+.\out\rs485.o: CODE\BOARD\DRIVER\GPIO.h
+.\out\rs485.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\rs485.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\rs485.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\rs485.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\rs485.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\rs485.o: CODE\BOARD\DRIVER\TIMER.h

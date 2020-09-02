@@ -1,0 +1,13 @@
+.\out\iap.o: CODE\BOARD\IAP.c
+.\out\iap.o: CODE\BOARD\IAP.h
+.\out\iap.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\iap.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\iap.o: .\CODE\BOARD\LPC177x_8x\lpc177x_8x.h
+.\out\iap.o: .\CODE\BOARD\CM3\core_cm3.h
+.\out\iap.o: .\CODE\BOARD\CM3\core_cmInstr.h
+.\out\iap.o: .\CODE\BOARD\CM3\core_cmFunc.h
+.\out\iap.o: .\CODE\BOARD\LPC177x_8x\system_LPC177x_8x.h
+.\out\iap.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\iap.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\iap.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\iap.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h

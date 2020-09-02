@@ -1,0 +1,17 @@
+.\out\ext_chgtask.o: CODE\APP\EXT_CHG\EXT_ChgTask.c
+.\out\ext_chgtask.o: CODE\APP\EXT_CHG\EXT_ChgTask.h
+.\out\ext_chgtask.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\ext_chgtask.o: .\CODE\APP\App.h
+.\out\ext_chgtask.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\ext_chgtask.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\ext_chgtask.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\ext_chgtask.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\ext_chgtask.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\ext_chgtask.o: .\CODE\BOARD\DRIVER\Timer.h
+.\out\ext_chgtask.o: .\CODE\BOARD\DRIVER\RTC.h
+.\out\ext_chgtask.o: .\CODE\BOARD\DRIVER\UART.h
+.\out\ext_chgtask.o: .\CODE\BOARD\DRIVER\CAN.h
+.\out\ext_chgtask.o: .\CODE\APP\ChgInterface.h
+.\out\ext_chgtask.o: .\CODE\APP\ElmTask.h
+.\out\ext_chgtask.o: .\CODE\BOARD\board.h
+.\out\ext_chgtask.o: .\CODE\APP\para.h

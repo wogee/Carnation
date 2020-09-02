@@ -1,0 +1,9 @@
+.\out\mt625.o: CODE\BOARD\DRIVER\MT625.c
+.\out\mt625.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\mt625.o: .\CODE\BOARD\Board.h
+.\out\mt625.o: CODE\BOARD\DRIVER\UART.h
+.\out\mt625.o: CODE\BOARD\DRIVER\MT625.h
+.\out\mt625.o: .\CODE\APP\MyAlgLib.h
+.\out\mt625.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\mt625.o: CODE\BOARD\DRIVER\RTC.h
+.\out\mt625.o: .\CODE\APP\LIB\encrypt.h

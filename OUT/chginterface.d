@@ -1,0 +1,17 @@
+.\out\chginterface.o: CODE\APP\ChgInterface.c
+.\out\chginterface.o: .\CODE\OS\uCOS-II\Ports\includes.h
+.\out\chginterface.o: .\CODE\OS\uCOS-II\Ports\os_cpu.h
+.\out\chginterface.o: .\CODE\OS\uCOS-II\os_cfg.h
+.\out\chginterface.o: .\CODE\OS\uCOS-II\Source\ucos_ii.h
+.\out\chginterface.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\out\chginterface.o: CODE\APP\ChgInterface.h
+.\out\chginterface.o: .\CODE\APP\EXT_CHG\EXT_ChgTask.h
+.\out\chginterface.o: D:\software\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\chginterface.o: .\CODE\APP\App.h
+.\out\chginterface.o: .\CODE\BOARD\DRIVER\Timer.h
+.\out\chginterface.o: .\CODE\BOARD\DRIVER\RTC.h
+.\out\chginterface.o: .\CODE\BOARD\DRIVER\UART.h
+.\out\chginterface.o: .\CODE\BOARD\DRIVER\CAN.h
+.\out\chginterface.o: .\CODE\APP\ElmTask.h
+.\out\chginterface.o: .\CODE\BOARD\board.h
+.\out\chginterface.o: .\CODE\APP\para.h
