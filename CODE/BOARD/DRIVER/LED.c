@@ -201,6 +201,12 @@ void LedChargeOff(void)
 void LedPwrOn(void)
 {
 	GpioSetLev(GPIO_LEDPWR,HIGH);
+	
+	
+	
+	
+	
+	
 }
 
 

@@ -1897,7 +1897,7 @@ Section Cross References
     ext_chgtask.o(i.ChgHandle) refers to timer.o(i.TimerRead) for TimerRead
     ext_chgtask.o(i.ChgHandle) refers to ext_chgtask.o(i.SendPF32) for SendPF32
     ext_chgtask.o(i.ChgHandle) refers to ext_chgtask.o(i.SendPF30) for SendPF30
-    ext_chgtask.o(i.ChgHandle) refers to ext_chgtask.o(i.SendPF46) for SendPF46
+    ext_chgtask.o(i.ChgHandle) refers to ext_chgtask.o(i.SendPF35) for SendPF35
     ext_chgtask.o(i.ChgHandle) refers to ext_chgtask.o(i.AnalyseMsgFromCCB) for AnalyseMsgFromCCB
     ext_chgtask.o(i.ChgHandle) refers to ext_chgtask.o(.bss) for ChgCtl
     ext_chgtask.o(i.ChgHandle) refers to ext_chgtask.o(.data) for StopTimer
@@ -1925,14 +1925,14 @@ Section Cross References
     ext_chgtask.o(i.SendPF31) refers to ext_chgtask.o(i.SendDataToCCB) for SendDataToCCB
     ext_chgtask.o(i.SendPF32) refers to ext_chgtask.o(i.SendDataToCCB) for SendDataToCCB
     ext_chgtask.o(i.SendPF33) refers to ext_chgtask.o(i.SendDataToCCB) for SendDataToCCB
-    ext_chgtask.o(i.SendPF46) refers to memseta.o(.text) for __aeabi_memclr4
-    ext_chgtask.o(i.SendPF46) refers to elmtask.o(i.ElmGetVolA) for ElmGetVolA
-    ext_chgtask.o(i.SendPF46) refers to elmtask.o(i.ElmGetVolB) for ElmGetVolB
-    ext_chgtask.o(i.SendPF46) refers to elmtask.o(i.ElmGetVolC) for ElmGetVolC
-    ext_chgtask.o(i.SendPF46) refers to elmtask.o(i.ElmGetCurA) for ElmGetCurA
-    ext_chgtask.o(i.SendPF46) refers to elmtask.o(i.ElmGetCurB) for ElmGetCurB
-    ext_chgtask.o(i.SendPF46) refers to elmtask.o(i.ElmGetCurC) for ElmGetCurC
-    ext_chgtask.o(i.SendPF46) refers to ext_chgtask.o(i.MultiFramePackAndSend) for MultiFramePackAndSend
+    ext_chgtask.o(i.SendPF35) refers to memseta.o(.text) for __aeabi_memclr4
+    ext_chgtask.o(i.SendPF35) refers to elmtask.o(i.ElmGetVolA) for ElmGetVolA
+    ext_chgtask.o(i.SendPF35) refers to elmtask.o(i.ElmGetVolB) for ElmGetVolB
+    ext_chgtask.o(i.SendPF35) refers to elmtask.o(i.ElmGetVolC) for ElmGetVolC
+    ext_chgtask.o(i.SendPF35) refers to elmtask.o(i.ElmGetCurA) for ElmGetCurA
+    ext_chgtask.o(i.SendPF35) refers to elmtask.o(i.ElmGetCurB) for ElmGetCurB
+    ext_chgtask.o(i.SendPF35) refers to elmtask.o(i.ElmGetCurC) for ElmGetCurC
+    ext_chgtask.o(i.SendPF35) refers to ext_chgtask.o(i.MultiFramePackAndSend) for MultiFramePackAndSend
     ext_chgtask.o(i.SendPara) refers to para.o(i.SetParaCmd) for SetParaCmd
     ext_chgtask.o(i.SendPara) refers to para.o(i.BoardGetModuleType) for BoardGetModuleType
     ext_chgtask.o(i.SendPara) refers to para.o(i.BoardGetMoudleNum) for BoardGetMoudleNum
@@ -3494,7 +3494,7 @@ Image Symbol Table
     i.SendPF31                               0x000110f0   Section        0  ext_chgtask.o(i.SendPF31)
     i.SendPF32                               0x00011114   Section        0  ext_chgtask.o(i.SendPF32)
     i.SendPF33                               0x00011134   Section        0  ext_chgtask.o(i.SendPF33)
-    i.SendPF46                               0x00011158   Section        0  ext_chgtask.o(i.SendPF46)
+    i.SendPF35                               0x00011158   Section        0  ext_chgtask.o(i.SendPF35)
     i.SendPara                               0x000111e0   Section        0  ext_chgtask.o(i.SendPara)
     SendPara                                 0x000111e1   Thumb Code   168  ext_chgtask.o(i.SendPara)
     i.SetLEDState                            0x00011298   Section        0  maintask.o(i.SetLEDState)
@@ -4371,7 +4371,7 @@ Image Symbol Table
     SendPF31                                 0x000110f1   Thumb Code    32  ext_chgtask.o(i.SendPF31)
     SendPF32                                 0x00011115   Thumb Code    28  ext_chgtask.o(i.SendPF32)
     SendPF33                                 0x00011135   Thumb Code    32  ext_chgtask.o(i.SendPF33)
-    SendPF46                                 0x00011159   Thumb Code   132  ext_chgtask.o(i.SendPF46)
+    SendPF35                                 0x00011159   Thumb Code   132  ext_chgtask.o(i.SendPF35)
     SetMainCharge                            0x000112a5   Thumb Code    78  maintask.o(i.SetMainCharge)
     SetParaCmd                               0x00011309   Thumb Code     6  para.o(i.SetParaCmd)
     SetParaResult                            0x00011315   Thumb Code     6  para.o(i.SetParaResult)
@@ -5057,7 +5057,7 @@ Memory Map of the image
     0x000110f0   0x00000024   Code   RO         4260    i.SendPF31          ext_chgtask.o
     0x00011114   0x00000020   Code   RO         4261    i.SendPF32          ext_chgtask.o
     0x00011134   0x00000024   Code   RO         4262    i.SendPF33          ext_chgtask.o
-    0x00011158   0x00000088   Code   RO         4263    i.SendPF46          ext_chgtask.o
+    0x00011158   0x00000088   Code   RO         4263    i.SendPF35          ext_chgtask.o
     0x000111e0   0x000000b8   Code   RO         4264    i.SendPara          ext_chgtask.o
     0x00011298   0x0000000c   Code   RO          114    i.SetLEDState       maintask.o
     0x000112a4   0x00000064   Code   RO          115    i.SetMainCharge     maintask.o

@@ -2,7 +2,7 @@
 static struct{
 	CHARGEINFO info;
 	uint8_t CCBState; //充电控制板状态
-	uint8_t State; //状态
+	uint8_t State;    //状态
 	uint8_t StartResult;//启动结果 0成功 1失败
 	uint8_t StopCause;//停止原因
 	uint8_t RecvCCB_PF30_Flag;
@@ -263,9 +263,9 @@ static void SendPara( uint8_t Mode)
 ** 返    回 :	无
 *************************************************************************************************************
 */
-void SendPF46(uint8_t port)
+void SendPF35(uint8_t port)
 {
-	uint32_t id=0x184600a0 | (port << 8);
+	uint32_t id=0x183500a0 | (port << 8);
 	uint8_t data[32], *pdata;
 	uint32_t data32;
 	
@@ -534,7 +534,7 @@ void ChgHandle(uint8_t port)
 	
 	if (TimerRead() - YaoCeTimer[port] > T100MS * 10){
 		YaoCeTimer[port] = TimerRead();
-		SendPF46(port);
+		SendPF35(port);
 	}
 	
 	if (ChgCtl[port].RecvCCB_PF34_Flag == 0){

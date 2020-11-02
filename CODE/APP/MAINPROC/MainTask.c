@@ -3851,9 +3851,7 @@ void MainTask(void *pdata)
 		AnalyseMsgFromDebugPlatform();
 		AnalyseMsgFromUdpPlatform();
 		
-		LEDBoardControl();  //三色灯
-
-		
+		LEDBoardControl();  //三色灯		
 		OSTimeDlyHMSM (0, 0, 0, 10);
 	}
 }
