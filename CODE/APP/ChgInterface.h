@@ -95,11 +95,10 @@ typedef struct{
 	uint16_t RatedCapacity;//整车动力蓄电池系统额定容量/，0.1Ah/位，0Ah偏移量
 	uint16_t RateDenergy;//动力蓄电池标称总能量 数据分辨率0.1kWh/位 0kWh偏移量 数据范围0~1000kWh
 	uint16_t BatterySOC;//整车动力蓄电池荷电状态 数据分辨率0.1%/位 0%偏移量 数据范围0~100%
-	uint8_t VIN[17];//车辆识别码（VIN）
-	
+	uint8_t VIN[17];//车辆识别码（VIN）	
 	uint8_t CommunicateState;//通信状态 0正常 1通信异常
+	
 }CHARGEINFO;
-
 
 
 

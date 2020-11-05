@@ -224,7 +224,7 @@ static void SendPara( uint8_t Mode)
 	uint8_t data[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 	uint16_t data16;
 	if(Mode == 1){
-		id = (SetParaCmd() & 0x80) == 0 ? 0x180680a0 : 0x180681a0;
+		id = (SetParaCmd() & 0x80) == 0 ? 0x183600a0 : 0x183601a0;
 		data[0] = (SetParaCmd() &0x7F);
 		switch(data[0]){
 			case 1:    //  ModuleType
@@ -245,7 +245,7 @@ static void SendPara( uint8_t Mode)
 				break;
 		}
 	}else{
-		id = (GetParaCmd() & 0x80) == 0 ? 0x180780a0 : 0x180781a0;
+		id = (GetParaCmd() & 0x80) == 0 ? 0x183700a0 : 0x183701a0;
 		data[0] = (GetParaCmd() &0x7F);
 	}
 	ClearParaCmd();
@@ -253,10 +253,8 @@ static void SendPara( uint8_t Mode)
 }
 
 
-
-
 /************************************************************************************************************
-** 函 数 名 : SendPF46
+** 函 数 名 : SendPF35
 ** 功能描述 : 发送计费控制板遥测帧
 ** 输    入 : port 充电接口 =0代表1号枪 =1代表2号枪...... 
 ** 输    出 : 无
@@ -274,19 +272,20 @@ void SendPF35(uint8_t port)
 	data32 = ElmGetVolA(port) * 100;
 	memcpy(pdata, &data32, 4);
 	pdata+=4;
-	data32 = ElmGetVolB(port) * 100;
-	memcpy(pdata, &data32, 4);
-	pdata+=4;
-	data32 = ElmGetVolC(port) * 100;
-	memcpy(pdata, &data32, 4);
-	pdata+=4;
 	data32 = ElmGetCurA(port);
 	memcpy(pdata, &data32, 4);
 	pdata+=4;
-	data32 = ElmGetCurB(port);
+
+	data32 = 0;
 	memcpy(pdata, &data32, 4);
 	pdata+=4;
-	data32 = ElmGetCurC(port);
+	data32 = 0;
+	memcpy(pdata, &data32, 4);
+	pdata+=4;
+	data32 = 0;
+	memcpy(pdata, &data32, 4);
+	pdata+=4;
+	data32 = 0;
 	memcpy(pdata, &data32, 4);
 	pdata+=4;
 	data32 = 0;
@@ -409,13 +408,13 @@ void AnalyseMsgFromCCB(void)
 					pdata += 2;
 					ChgCtl[port].RecvCCB_PF35_Flag = 1;
 					break;		
-				case 0x1806://设置功率分配板
+				case 0x1836://设置功率分配板
 					if(data[1])
 						SetParaResult(0);			
 					else
 						SetParaResult(1);		
 					break;	
-				case 0x1807://读功率分配板相关参数
+				case 0x1837://读功率分配板相关参数
 					if(data[0] == 1){
 						ReadModuleType = data[1];
 					}else if(data[0] == 2){

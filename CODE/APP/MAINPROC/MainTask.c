@@ -849,7 +849,7 @@ static void InitStartChgDate(MAININFO* Info, uint8_t Stype, uint32_t CardId, uin
 ** 功能描述 : 更新充电时的相关数据
 ** 输    入 : ChgData  MAININFO结构体指针   
 **  				:	info  CHARGEINFO结构体
-**  				:	port ==0 A枪   ==1B枪
+**  				:	port ==0 A枪   ==1 B枪
 ** 输    出 : 无
 ** 返    回 :	无
 *************************************************************************************************************
