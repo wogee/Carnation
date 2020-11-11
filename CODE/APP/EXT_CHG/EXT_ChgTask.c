@@ -264,7 +264,7 @@ static void SendPara( uint8_t Mode)
 void SendPF35(uint8_t port)
 {
 	uint32_t id=0x183500a0 | (port << 8);
-	uint8_t data[32], *pdata;
+	uint8_t data[16], *pdata;
 	uint32_t data32;
 	
 	memset(data, 0 , sizeof(data));
@@ -282,19 +282,7 @@ void SendPF35(uint8_t port)
 	data32 = 0;
 	memcpy(pdata, &data32, 4);
 	pdata+=4;
-	data32 = 0;
-	memcpy(pdata, &data32, 4);
-	pdata+=4;
-	data32 = 0;
-	memcpy(pdata, &data32, 4);
-	pdata+=4;
-	data32 = 0;
-	memcpy(pdata, &data32, 4);
-	pdata+=4;
-	data32 = 0;
-	memcpy(pdata, &data32, 4);
-	pdata+=4;
-	MultiFramePackAndSend(id, data, 32);
+	MultiFramePackAndSend(id, data, 16);
 }
 
 /************************************************************************************************************
