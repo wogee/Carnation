@@ -26,9 +26,9 @@ static uint8_t ModuleType;
 static uint8_t MoudleNum;
 static uint16_t MaxCurrent;
 static uint8_t PowerMode;
-static uint8_t SetParacmd;
-static uint8_t ParaResult;
-static uint8_t  GetParacmd;
+static uint8_t SetParacmd; // 1,模块类型 2，模块数量  3，电流值  4，功率分配模式
+static uint8_t ParaResult; // 1，成功   0，失败
+static uint8_t  GetParacmd;// 1,模块类型 2，模块数量  3，电流值  4，功率分配模式
 
 /************************************************************************************************************
 ** 函 数 名 : GetUpdata
