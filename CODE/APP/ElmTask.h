@@ -24,18 +24,15 @@
 
 
 #define ELM_CMD_READDATA   		0X11  		// 读数据
-#define ELM_ACK_READDATA   		0X91	 	// 读数据应答
+#define ELM_ACK_READDATA   		0X91	   	// 读数据应答
 #define ELM_ERR_READDATA   		0XD1  		// 读数据错误
 
 
 #define ELM_DI_READTOTALELC  	0X00010000  // 读总电量
-#define ELM_DI_READVOL	 		0x0201ff00  // 读电压
+#define ELM_DI_READVOL	 		  0x0201ff00  // 读电压
 #define ELM_DI_READCURRENT		0x0202ff00	// 读电流
-#define ELM_DI_READDAY			0x04000101  // 读日期
-#define ELM_DI_READTIME			0x04000102  // 读时间
-
-
-
+#define ELM_DI_READDAY			  0x04000101  // 读日期
+#define ELM_DI_READTIME		   	0x04000102  // 读时间
 
 #define ELMHEAD  0x68    // 帧头
 #define ELMTAIL  0x16	 // 帧尾	

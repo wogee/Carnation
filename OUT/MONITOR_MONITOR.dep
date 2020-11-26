@@ -16,7 +16,7 @@ I (.\CODE\CONFIG\Cfg.h)(0x5E04247E)
 I (CODE\APP\ChgInterface.h)(0x5FA206EC)
 I (CODE\APP\Protocol.h)(0x5E04247E)
 I (.\CODE\APP\NET\NetTask.h)(0x5E04247E)
-I (CODE\APP\ElmTask.h)(0x5E04247E)
+I (CODE\APP\ElmTask.h)(0x5FB5DEEC)
 I (CODE\APP\CardTask.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\MT625.h)(0x5E04247E)
 F (.\CODE\APP\MAINPROC\MainTask.c)(0x5FACA93E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CODE -I .\CODE\CONFIG -I .\CODE\BOARD\CM3 -I .\CODE\BOARD -I .\CODE\BOARD\LPC177x_8x -I .\CODE\BOARD\DRIVER -I .\CODE\OS\ -I .\CODE\OS\uCOS-II -I .\CODE\OS\uCOS-II\Ports -I .\CODE\OS\uCOS-II\Source -I .\CODE\APP -I .\CODE\APP\LIB -I .\CODE\APP\NET -I .\CODE\APP\CHG -I .\CODE\APP\MAINPROC -I .\CODE\APP\EXT_CHG-I.\RTE\_MONITOR-ID:\software\MDK\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include-ID:\software\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DLPC177x_8x -DNO_CRP -D__RUN_ADDR-o .\out\maintask.o --omf_browse .\out\maintask.crf --depend .\out\maintask.d)
@@ -51,7 +51,7 @@ I (.\CODE\BOARD\CM3\core_cm3.h)(0x5E04247E)
 I (.\CODE\BOARD\CM3\core_cmInstr.h)(0x5E04247E)
 I (.\CODE\BOARD\CM3\core_cmFunc.h)(0x5E04247E)
 I (.\CODE\BOARD\LPC177x_8x\system_LPC177x_8x.h)(0x5E04247E)
-I (.\CODE\APP\ElmTask.h)(0x5E04247E)
+I (.\CODE\APP\ElmTask.h)(0x5FB5DEEC)
 I (.\CODE\APP\NET\ethernet.h)(0x5E04247E)
 F (.\CODE\APP\MyAlgLib.c)(0x5E04247E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CODE -I .\CODE\CONFIG -I .\CODE\BOARD\CM3 -I .\CODE\BOARD -I .\CODE\BOARD\LPC177x_8x -I .\CODE\BOARD\DRIVER -I .\CODE\OS\ -I .\CODE\OS\uCOS-II -I .\CODE\OS\uCOS-II\Ports -I .\CODE\OS\uCOS-II\Source -I .\CODE\APP -I .\CODE\APP\LIB -I .\CODE\APP\NET -I .\CODE\APP\CHG -I .\CODE\APP\MAINPROC -I .\CODE\APP\EXT_CHG-I.\RTE\_MONITOR-ID:\software\MDK\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include-ID:\software\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DLPC177x_8x -DNO_CRP -D__RUN_ADDR-o .\out\myalglib.o --omf_browse .\out\myalglib.crf --depend .\out\myalglib.d)
 I (D:\software\MDK\ARM\ARMCC\include\stdint.h)(0x57F606B8)
@@ -87,7 +87,7 @@ I (.\CODE\BOARD\DRIVER\timer.h)(0x5E04247E)
 I (.\CODE\APP\EXT_CHG\EXT_ChgTask.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\CAN.h)(0x5E04247E)
 I (.\CODE\APP\ChgInterface.h)(0x5FA206EC)
-I (.\CODE\APP\ElmTask.h)(0x5E04247E)
+I (.\CODE\APP\ElmTask.h)(0x5FB5DEEC)
 I (CODE\APP\MyAlgLib.h)(0x5E04247E)
 I (D:\software\MDK\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
 I (.\CODE\APP\NET\ethernet.h)(0x5E04247E)
@@ -111,7 +111,7 @@ I (.\CODE\OS\uCOS-II\Ports\os_cpu.h)(0x5E04247E)
 I (.\CODE\OS\uCOS-II\os_cfg.h)(0x5E04247E)
 I (.\CODE\OS\uCOS-II\Source\ucos_ii.h)(0x5E04247E)
 I (D:\software\MDK\ARM\ARMCC\include\string.h)(0x57F606B8)
-I (CODE\APP\ElmTask.h)(0x5E04247E)
+I (CODE\APP\ElmTask.h)(0x5FB5DEEC)
 I (.\CODE\BOARD\DRIVER\RTC.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\RS485.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\UART.h)(0x5E04247E)
@@ -136,7 +136,7 @@ I (CODE\APP\Record.h)(0x5E04247E)
 I (.\CODE\CONFIG\Cfg.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\UART.h)(0x5E04247E)
 I (D:\software\MDK\ARM\ARMCC\include\stdio.h)(0x57F606B8)
-F (.\CODE\APP\Protocol.c)(0x5E04247E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CODE -I .\CODE\CONFIG -I .\CODE\BOARD\CM3 -I .\CODE\BOARD -I .\CODE\BOARD\LPC177x_8x -I .\CODE\BOARD\DRIVER -I .\CODE\OS\ -I .\CODE\OS\uCOS-II -I .\CODE\OS\uCOS-II\Ports -I .\CODE\OS\uCOS-II\Source -I .\CODE\APP -I .\CODE\APP\LIB -I .\CODE\APP\NET -I .\CODE\APP\CHG -I .\CODE\APP\MAINPROC -I .\CODE\APP\EXT_CHG-I.\RTE\_MONITOR-ID:\software\MDK\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include-ID:\software\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DLPC177x_8x -DNO_CRP -D__RUN_ADDR-o .\out\protocol.o --omf_browse .\out\protocol.crf --depend .\out\protocol.d)
+F (.\CODE\APP\Protocol.c)(0x5FB5DA50)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CODE -I .\CODE\CONFIG -I .\CODE\BOARD\CM3 -I .\CODE\BOARD -I .\CODE\BOARD\LPC177x_8x -I .\CODE\BOARD\DRIVER -I .\CODE\OS\ -I .\CODE\OS\uCOS-II -I .\CODE\OS\uCOS-II\Ports -I .\CODE\OS\uCOS-II\Source -I .\CODE\APP -I .\CODE\APP\LIB -I .\CODE\APP\NET -I .\CODE\APP\CHG -I .\CODE\APP\MAINPROC -I .\CODE\APP\EXT_CHG-I.\RTE\_MONITOR-ID:\software\MDK\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include-ID:\software\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DLPC177x_8x -DNO_CRP -D__RUN_ADDR-o .\out\protocol.o --omf_browse .\out\protocol.crf --depend .\out\protocol.d)
 I (D:\software\MDK\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (.\CODE\BOARD\LPC177x_8x\LPC177x_8x.H)(0x5E04247E)
 I (.\CODE\BOARD\CM3\core_cm3.h)(0x5E04247E)
@@ -161,7 +161,7 @@ I (.\CODE\APP\NET\NetTask.h)(0x5E04247E)
 I (.\CODE\APP\MAINPROC\MainTask.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\UART.h)(0x5E04247E)
 I (CODE\APP\ChgInterface.h)(0x5FA206EC)
-I (CODE\APP\ElmTask.h)(0x5E04247E)
+I (CODE\APP\ElmTask.h)(0x5FB5DEEC)
 I (.\CODE\BOARD\IAP.h)(0x5E04247E)
 F (.\CODE\APP\ChgInterface.c)(0x5E04247E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CODE -I .\CODE\CONFIG -I .\CODE\BOARD\CM3 -I .\CODE\BOARD -I .\CODE\BOARD\LPC177x_8x -I .\CODE\BOARD\DRIVER -I .\CODE\OS\ -I .\CODE\OS\uCOS-II -I .\CODE\OS\uCOS-II\Ports -I .\CODE\OS\uCOS-II\Source -I .\CODE\APP -I .\CODE\APP\LIB -I .\CODE\APP\NET -I .\CODE\APP\CHG -I .\CODE\APP\MAINPROC -I .\CODE\APP\EXT_CHG-I.\RTE\_MONITOR-ID:\software\MDK\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include-ID:\software\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DLPC177x_8x -DNO_CRP -D__RUN_ADDR-o .\out\chginterface.o --omf_browse .\out\chginterface.crf --depend .\out\chginterface.d)
 I (.\CODE\OS\uCOS-II\Ports\includes.h)(0x5E04247E)
@@ -177,12 +177,12 @@ I (.\CODE\BOARD\DRIVER\Timer.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\RTC.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\UART.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\CAN.h)(0x5E04247E)
-I (.\CODE\APP\ElmTask.h)(0x5E04247E)
+I (.\CODE\APP\ElmTask.h)(0x5FB5DEEC)
 I (.\CODE\BOARD\board.h)(0x5E04247E)
 I (.\CODE\APP\para.h)(0x5F3F5D87)
 F (.\CODE\APP\LIB\ENCRYPT.lib)(0x5E04247E)()
 F (.\CODE\APP\LIB\USBFS10.lib)(0x5E04247E)()
-F (.\CODE\APP\DisPlay.c)(0x5F4C8DFD)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CODE -I .\CODE\CONFIG -I .\CODE\BOARD\CM3 -I .\CODE\BOARD -I .\CODE\BOARD\LPC177x_8x -I .\CODE\BOARD\DRIVER -I .\CODE\OS\ -I .\CODE\OS\uCOS-II -I .\CODE\OS\uCOS-II\Ports -I .\CODE\OS\uCOS-II\Source -I .\CODE\APP -I .\CODE\APP\LIB -I .\CODE\APP\NET -I .\CODE\APP\CHG -I .\CODE\APP\MAINPROC -I .\CODE\APP\EXT_CHG-I.\RTE\_MONITOR-ID:\software\MDK\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include-ID:\software\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DLPC177x_8x -DNO_CRP -D__RUN_ADDR-o .\out\display.o --omf_browse .\out\display.crf --depend .\out\display.d)
+F (.\CODE\APP\DisPlay.c)(0x5FB4BD47)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\CODE -I .\CODE\CONFIG -I .\CODE\BOARD\CM3 -I .\CODE\BOARD -I .\CODE\BOARD\LPC177x_8x -I .\CODE\BOARD\DRIVER -I .\CODE\OS\ -I .\CODE\OS\uCOS-II -I .\CODE\OS\uCOS-II\Ports -I .\CODE\OS\uCOS-II\Source -I .\CODE\APP -I .\CODE\APP\LIB -I .\CODE\APP\NET -I .\CODE\APP\CHG -I .\CODE\APP\MAINPROC -I .\CODE\APP\EXT_CHG-I.\RTE\_MONITOR-ID:\software\MDK\ARM\PACK\Keil\LPC1700_DFP\2.3.0\Device\Include-ID:\software\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DLPC177x_8x -DNO_CRP -D__RUN_ADDR-o .\out\display.o --omf_browse .\out\display.crf --depend .\out\display.d)
 I (.\CODE\BOARD\DRIVER\xrd.h)(0x5F4C9994)
 I (D:\software\MDK\ARM\ARMCC\include\stdio.h)(0x57F606B8)
 I (D:\software\MDK\ARM\ARMCC\include\stdint.h)(0x57F606B8)
@@ -546,6 +546,6 @@ I (.\CODE\BOARD\DRIVER\RTC.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\UART.h)(0x5E04247E)
 I (.\CODE\BOARD\DRIVER\CAN.h)(0x5E04247E)
 I (.\CODE\APP\ChgInterface.h)(0x5FA206EC)
-I (.\CODE\APP\ElmTask.h)(0x5E04247E)
+I (.\CODE\APP\ElmTask.h)(0x5FB5DEEC)
 I (.\CODE\BOARD\board.h)(0x5E04247E)
 I (.\CODE\APP\para.h)(0x5F3F5D87)

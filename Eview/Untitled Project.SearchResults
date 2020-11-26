@@ -1,0 +1,22 @@
+---- OneGunState Matches (21 in 0 files) ----
+MainTask.c (code\app\mainproc):static uint8_t OneGunState,TwoGunState;//µ¥Ç¹ºÍË«Ç¹×´Ì¬
+MainTask.c (code\app\mainproc):	switch(OneGunState){
+MainTask.c (code\app\mainproc):														OneGunState = A_CHARGE;
+MainTask.c (code\app\mainproc):															OneGunState = A_STOP;
+MainTask.c (code\app\mainproc):								OneGunState = A_CHARGE;
+MainTask.c (code\app\mainproc):								OneGunState = A_STOP;
+MainTask.c (code\app\mainproc):							OneGunState = A_CHARGE;
+MainTask.c (code\app\mainproc):							OneGunState = A_STOP;
+MainTask.c (code\app\mainproc):						OneGunState = A_IDLE;
+MainTask.c (code\app\mainproc):						OneGunState = A_STOP;					
+MainTask.c (code\app\mainproc):					OneGunState = A_IDLE;
+MainTask.c (code\app\mainproc):				OneGunState = A_IDLE;						
+MainTask.c (code\app\mainproc):					OneGunState = A_STOP;
+MainTask.c (code\app\mainproc):					OneGunState = A_IDLE;
+MainTask.c (code\app\mainproc):					OneGunState = A_STOP;
+MainTask.c (code\app\mainproc):					OneGunState = A_IDLE;
+MainTask.c (code\app\mainproc):				OneGunState = A_IDLE;
+MainTask.c (code\app\mainproc):						OneGunState = A_IDLE;
+MainTask.c (code\app\mainproc):					OneGunState = A_IDLE;			
+MainTask.c (code\app\mainproc):			if (OneGunState == A_IDLE){
+MainTask.c (code\app\mainproc):			} else if (OneGunState == A_CHARGE){
