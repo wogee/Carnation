@@ -7,9 +7,9 @@
 #include "UART.h"
 static CARDTASKINFO CardTaskInfo={0};
 static uint8_t SetCardFlag;
-static uint8_t SetCardType;
+static uint8_t SetCardType;  //
 static uint8_t SetCardPara[16];
-static uint8_t SetCardRet;
+static uint8_t SetCardRet;   //0失败 1成功
  
 /************************************************************************************************************
 ** 函 数 名 : CardGetState
@@ -225,43 +225,43 @@ static void CardProc(void)
 	
 	if (MTSearch(&UID) == 1){
 		if (state != 1){
-			ParaGetCustomerNumber(CustomNum);
-			data64 = CalcKey(*(uint32_t*)CustomNum);
+			ParaGetCustomerNumber(CustomNum);                          //获取客户编号
+			data64 = CalcKey(*(uint32_t*)CustomNum);                   //客户编号转为验证码
 			memcpy(CardTaskInfo.cardinfo.KeyA, &data64, 6);
 			if (MTRead(&CardTaskInfo.cardinfo) == 1){
 				state = 1;
-				CardTaskInfo.swmark = 1;
+				CardTaskInfo.swmark = 1;                              //有刷卡
 			}
 		}
 	} else {
 		state = 0;
 		CardTaskInfo.cardinfo.cardID = 0;
-		CardTaskInfo.swmark = 0;
+		CardTaskInfo.swmark = 0;                                      //没刷卡
 	}
 	
 	if (SetCardFlag == 1){
 		ParaGetCustomerNumber(CustomNum);
 		data64 = CalcKey(*(uint32_t*)CustomNum);
 		memcpy(CardTaskInfo.cardinfo.KeyA, &data64, 6);
-		if (SetCardType == 1){//解锁
+		if (SetCardType == 1){                                        //解锁
 			CardTaskInfo.cardinfo.lockst = SetCardPara[0];
 			if (MTWrite(&CardTaskInfo.cardinfo) == 1){
 				SetCardRet = 1;
 			}
 			SetCardFlag = 0;
-		} else if (SetCardType == 2){//写金额
+		} else if (SetCardType == 2){                                 //写金额
 			memcpy(&CardTaskInfo.cardinfo.Money , SetCardPara, 4);
 			if (MTWrite(&CardTaskInfo.cardinfo) == 1){
 				SetCardRet = 1;
 			}
 			SetCardFlag = 0;
-		} else if (SetCardType == 3){//写桩编号
+		} else if (SetCardType == 3){                                 //写桩编号
 			memcpy(&CardTaskInfo.cardinfo.PileNumber , SetCardPara, 4);
 			if (MTWrite(&CardTaskInfo.cardinfo) == 1){
 				SetCardRet = 1;
 			}
 			SetCardFlag = 0;
-		} else if (SetCardType == 4){//写金额并解锁
+		} else if (SetCardType == 4){                                 //写金额并解锁
 			memcpy(&CardTaskInfo.cardinfo.Money , SetCardPara, 4);
 			CardTaskInfo.cardinfo.lockst = UNLOCK;//解锁    
 			if (MTWrite(&CardTaskInfo.cardinfo) == 1){
@@ -269,7 +269,7 @@ static void CardProc(void)
 			}
 			SetCardFlag = 0;
 		}
-		else if (SetCardType == 5){  //写桩号并加锁
+		else if (SetCardType == 5){                                   //写桩号并加锁
 			memcpy(&CardTaskInfo.cardinfo.PileNumber , SetCardPara, 4);
 			CardTaskInfo.cardinfo.lockst = LOCK;//加锁
 			if (MTWrite(&CardTaskInfo.cardinfo) == 1){

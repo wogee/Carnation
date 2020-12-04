@@ -20,3 +20,98 @@ MainTask.c (code\app\mainproc):						OneGunState = A_IDLE;
 MainTask.c (code\app\mainproc):					OneGunState = A_IDLE;			
 MainTask.c (code\app\mainproc):			if (OneGunState == A_IDLE){
 MainTask.c (code\app\mainproc):			} else if (OneGunState == A_CHARGE){
+---- sectorx Matches (2 in 0 files) ----
+MT625.h (code\board\driver):	uint8_t    sectorx;   //扇区号
+MT625.h (code\board\driver):    uint8_t    sectorx; //扇区号
+---- SetCardFlag Matches (17 in 0 files) ----
+CardTask.c (code\app):static uint8_t SetCardFlag;
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	if (SetCardFlag == 1){
+CardTask.c (code\app):			SetCardFlag = 0;
+CardTask.c (code\app):			SetCardFlag = 0;
+CardTask.c (code\app):			SetCardFlag = 0;
+CardTask.c (code\app):			SetCardFlag = 0;
+CardTask.c (code\app):			SetCardFlag = 0;
+---- SetCardFlag Matches (17 in 0 files) ----
+CardTask.c (code\app):static uint8_t SetCardFlag;
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	SetCardFlag = 1;
+CardTask.c (code\app):	while(SetCardFlag == 1)
+CardTask.c (code\app):	if (SetCardFlag == 1){
+CardTask.c (code\app):			SetCardFlag = 0;
+CardTask.c (code\app):			SetCardFlag = 0;
+CardTask.c (code\app):			SetCardFlag = 0;
+CardTask.c (code\app):			SetCardFlag = 0;
+CardTask.c (code\app):			SetCardFlag = 0;
+---- SetCardRet Matches (16 in 1 files) ----
+CardTask.c (code\app):static uint8_t SetCardRet;
+CardTask.c (code\app):	SetCardRet = 0;
+CardTask.c (code\app):	return SetCardRet;
+CardTask.c (code\app):	SetCardRet = 0;
+CardTask.c (code\app):	return SetCardRet;
+CardTask.c (code\app):	SetCardRet = 0;
+CardTask.c (code\app):	return SetCardRet;
+CardTask.c (code\app):	SetCardRet = 0;
+CardTask.c (code\app):	return SetCardRet;
+CardTask.c (code\app):	SetCardRet = 0;
+CardTask.c (code\app):	return SetCardRet;
+CardTask.c (code\app):				SetCardRet = 1;
+CardTask.c (code\app):				SetCardRet = 1;
+CardTask.c (code\app):				SetCardRet = 1;
+CardTask.c (code\app):				SetCardRet = 1;
+CardTask.c (code\app):				SetCardRet = 1;
+---- CardGetMoney Matches (2 in 0 files) ----
+CardTask.c (code\app):** 函 数 名 : CardGetMoney
+CardTask.c (code\app):uint32_t CardGetMoney(void)
+---- CalcKey Matches (12 in 3 files) ----
+CardTask.c (code\app):			data64 = CalcKey(*(uint32_t*)CustomNum);                   //客户编号转为验证码
+CardTask.c (code\app):		data64 = CalcKey(*(uint32_t*)CustomNum);
+Encrypt.h (code\app\lib):uint64_t CalcKey(uint32_t nCustomerID);
+MONITOR.htm (out):<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcKey
+MONITOR.htm (out):<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcKey
+MONITOR.htm (out):<P><STRONG><a name="[a0]"></a>CalcKey</STRONG> (Thumb, 148 bytes, Stack size 184 bytes, encrypt.o(i.CalcKey))
+MONITOR.htm (out):<BR><BR>[Stack]<UL><LI>Max Depth = 548<LI>Call Chain = CalcKey &rArr; MD5Final &rArr; MD5Update &rArr; MD5Transform &rArr; MD5Decode
+MONITOR.htm (out):<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcKey
+MONITOR.htm (out):<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcKey
+MONITOR.htm (out):<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcKey
+MONITOR.htm (out):<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcKey
+MONITOR.htm (out):<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcKey
+---- Encrypt Matches (6 in 3 files) ----
+Encrypt.h (code\app\lib):void Encrypt(const uint8_t* input, const uint8_t* key, uint8_t *output, const uint32_t length);
+MONITOR.htm (out):<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encrypt
+MONITOR.htm (out):<P><STRONG><a name="[147]"></a>Encrypt</STRONG> (Thumb, 28 bytes, Stack size 24 bytes, encrypt.o(i.Encrypt))
+MONITOR.htm (out):<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Encrypt &rArr; AES_ECB_encrypt &rArr; Cipher &rArr; MixColumns
+MONITOR.htm (out):<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encrypt
+MT625.c (code\board\driver):									Encrypt((const uint8_t *)&tmpbuf2, 0, &tmpbuf[2], 16);
+---- GetLifeTime Matches (2 in 0 files) ----
+MainTask.c (code\app\mainproc):** 函 数 名 : GetLifeTime
+MainTask.c (code\app\mainproc):uint8_t GetLifeTime(void)
+---- LifeTimeExpireFlag Matches (10 in 0 files) ----
+MainTask.c (code\app\mainproc):static uint8_t LifeTimeExpireFlag;//使用期限到期标志 0未到期 1到期
+MainTask.c (code\app\mainproc):	LifeTimeExpireFlag = 0;
+MainTask.c (code\app\mainproc):			LifeTimeExpireFlag = 1;
+MainTask.c (code\app\mainproc):	return LifeTimeExpireFlag;
+MainTask.c (code\app\mainproc):			}else if ((info[0].ScramState == 1) || (info[0].DoorState == 1) || (info[0].CommunicateState == 1) || (ElmGetCommState(0) == 1) || (LifeTimeExpireFlag == 1))    //充电桩故障 
+MainTask.c (code\app\mainproc):						if (LifeTimeExpireFlag == 1)
+MainTask.c (code\app\mainproc):			if ((info[0].ScramState == 1) || (info[0].DoorState == 1) || (info[0].CommunicateState == 1) || (ElmGetCommState(0) == 1) || (LifeTimeExpireFlag == 1)){//充电桩故障
+MainTask.c (code\app\mainproc):			if ((info[0].ScramState == 1) || (info[0].DoorState == 1) || (info[0].CommunicateState == 1) || (ElmGetCommState(0) == 1) || (LifeTimeExpireFlag == 1)){//充电桩故障
+MainTask.c (code\app\mainproc):	if ((Info.ScramState == 1) || (Info.DoorState == 1) || (Info.CommunicateState == 1) || (ElmGetCommState(port) == 1) || (LifeTimeExpireFlag == 1) || (Info.CCBAddrConflictState == 1) ){
+MainTask.c (code\app\mainproc):		if (LifeTimeExpireFlag == 1)
+---- ParaSavaRunHour Matches (1 in 0 files) ----
+MainTask.c (code\app\mainproc):			ParaSavaRunHour(RunHours);

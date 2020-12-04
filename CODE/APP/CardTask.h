@@ -21,7 +21,7 @@ typedef struct
 {
 	uint8_t 	state;		    // 状态
 	uint8_t 	swmark;		    // 是否有卡刷  0 没有刷卡  1 有刷卡
-	uint8_t 	type;		    // 类型  在线卡或离线卡
+	uint8_t 	type;		      // 类型  在线卡或离线卡
 	uint8_t 	id[10];		    // 卡ID 
 	uint32_t    remoney;	    // 余额
 	uint8_t     lockst;		    // 锁状态   0 未锁  1 有锁

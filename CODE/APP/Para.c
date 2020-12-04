@@ -1281,15 +1281,15 @@ uint8_t ParaSetActCode(uint8_t * data)
 	memset(daystr, '\0', sizeof(daystr));	
 	Decryption(Getbuf, strlen((const char *)Getbuf), str);		//解密
 	pstr = str;
-	memcpy(newpass, pstr, 4);
-	memcpy(oldpass, pstr+4, 4);
+	memcpy(newpass, pstr, 4);                                 //复制新密码
+	memcpy(oldpass, pstr+4, 4);                               //复制旧密码
 	memcpy(daystr, pstr+8, 4);
 	if(memcmp(oldpass, CfgInfo.ActPassword, 4))
 		return 1;
-	memcpy(CfgInfo.ActPassword, newpass, 4);// 将new  写入  old
-	memcpy(CfgInfo.ActCode, data, 32); //写入激活码
+	memcpy(CfgInfo.ActPassword, newpass, 4);                  // 将new  写入  old
+	memcpy(CfgInfo.ActCode, data, 32);                        //写入激活码
 	CfgInfo.LimitHour =  atoi((const char *)daystr)* 24;	
-	RunHour = 0;
+	RunHour = 0;                                              //运行时间写入0
 	EepromWrite(0, EEPROMADDR_SAVERUNHOUR, &RunHour, MODE_8_BIT, sizeof(RunHour));
 	EepromWrite(0, EEPROMADDR_SAVEINFO, &CfgInfo, MODE_8_BIT, sizeof(CFGINFO));
 	return 0;

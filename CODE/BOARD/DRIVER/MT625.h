@@ -13,26 +13,23 @@
 typedef struct 
 {
 	uint8_t type;     	// 命令字
-	uint8_t cmd; 			// 命令参数字
+	uint8_t cmd; 			  // 命令参数字
 	uint8_t buflen; 		// 接受到的数据长度
 	uint8_t buf[128];		// 接受到的数据
 }MTRcvMsg;
 
 
-typedef struct 
-{
-	uint8_t    sectorx;   //扇区号
-    uint8_t    bldata[16];
-	
-}M1BLOCK;
-
-
-
+//typedef struct 
+//{
+//	  uint8_t    sectorx;   //扇区号
+//    uint8_t    bldata[16];
+//	
+//}M1BLOCK;
 
 
 typedef struct{
-	uint8_t KeyA[6];   //验证B密码
-	uint8_t KeyB[6];   //验证A密码
+	uint8_t KeyA[6];   //验证A密码
+	uint8_t KeyB[6];   //验证B密码
 
 	uint32_t cardID;//卡ID  
 	uint8_t type;//类型 0x01:离线卡 0x02:在线卡
@@ -43,39 +40,37 @@ typedef struct{
 	uint8_t PileNumber[4];//桩编号后4位
 }M1CARDVIF;//m1卡验证块读取
 
-typedef struct 
-{
-    uint8_t    sectorx; //扇区号
-    
-	uint8_t    KeyA[6]; //验证B密码
-	uint8_t    KeyB[6]; //验证A密码
-	uint32_t   cardID;
-	
-  //卡片记录充电
-    uint8_t   deviceNoH;  //1桩编号      0xFFFF
-	uint8_t   deviceNoL;
-	uint32_t 	timestpA;	//3~6时间戳      0xFFFFFFFF
-	uint32_t 	timestpB;	//3~6时间戳      0xFFFFFFFF
-	uint32_t 	timestpC;	//3~6时间戳      0xFFFFFFFF
-	uint32_t 	timestpD;	//3~6时间戳      0xFFFFFFFF
-	uint16_t 	usepowerA;	//7~9使用电量    0x00FFFFFF 
-    uint16_t 	usepowerB;	//7~9使用电量    0x00FFFFFF 
-    uint16_t 	usepowerC;	//7~9使用电量    0x00FFFFFF 	
-	uint32_t  conmoneyA;	//10~12使用金额  0x00FFFFFF    10000.00 元，保留两位小数
-	uint32_t  conmoneyB;	//10~12使用金额  0x00FFFFFF    10000.00 元，保留两位小数
-	uint32_t  conmoneyC;	//10~12使用金额  0x00FFFFFF    10000.00 元，保留两位小数
-    uint8_t   rfu[3];     //13~15预留 
-	uint8_t   crc;        //16           crc8
-		
-}M1CARDREC;//m1卡记录
-
-
+//typedef struct 
+//{
+//    uint8_t    sectorx; //扇区号
+//    
+//	uint8_t    KeyA[6]; //验证B密码
+//	uint8_t    KeyB[6]; //验证A密码
+//	uint32_t   cardID;
+//	
+//  //卡片记录充电
+//    uint8_t   deviceNoH;  //1桩编号      0xFFFF
+//	uint8_t   deviceNoL;
+//	uint32_t 	timestpA;	//3~6时间戳      0xFFFFFFFF
+//	uint32_t 	timestpB;	//3~6时间戳      0xFFFFFFFF
+//	uint32_t 	timestpC;	//3~6时间戳      0xFFFFFFFF
+//	uint32_t 	timestpD;	//3~6时间戳      0xFFFFFFFF
+//	uint16_t 	usepowerA;	//7~9使用电量    0x00FFFFFF 
+//    uint16_t 	usepowerB;	//7~9使用电量    0x00FFFFFF 
+//    uint16_t 	usepowerC;	//7~9使用电量    0x00FFFFFF 	
+//	uint32_t  conmoneyA;	//10~12使用金额  0x00FFFFFF    10000.00 元，保留两位小数
+//	uint32_t  conmoneyB;	//10~12使用金额  0x00FFFFFF    10000.00 元，保留两位小数
+//	uint32_t  conmoneyC;	//10~12使用金额  0x00FFFFFF    10000.00 元，保留两位小数
+//    uint8_t   rfu[3];     //13~15预留 
+//	uint8_t   crc;        //16           crc8
+//		
+//}M1CARDREC;//m1卡记录
 
 
 #define    TYPE_START               0x01	    // 开始
-#define    TYPE_END					0x02	    // 结束
+#define    TYPE_END				        	0x02	    // 结束
 
-#define  	MT_CMD_M1_FIND   		0x30        // 寻卡M1卡
+#define  	MT_CMD_M1_FIND   		    0x30        // 寻卡M1卡
 #define  	MT_CMD_M1_READID   	    0x31        // 获取M1卡号
 #define  	MT_CMD_M1_VIFKEYA       0x32        // 验证M1卡号A密码
 #define  	MT_CMD_M1_VIFKEYB       0x39        // 验证M1卡号B密码

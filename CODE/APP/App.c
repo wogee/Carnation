@@ -61,8 +61,8 @@ int main(void)
 
 	OSTaskCreateExt(MainTask, (void *)0, &MainTaskStk[MAINTASKSTKLEN - 1],  MAINTASKPRIO,	0, &MainTaskStk[0], MAINTASKSTKLEN,  (void *)0,  OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);  // 主任务
 	OSTaskCreateExt(ChargeTask, (void *)0, &ChargeTaskStk[CHARGETASKSTKLEN - 1],  CHARGETASKPRIO,	0, &ChargeTaskStk[0], CHARGETASKSTKLEN,  (void *)0,  OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);  // 充电任务
-	OSTaskCreateExt(TaskProtocolHandle, (void *)0, &ProtocolTaskStk[PROTOCOLTASKSTKLEN - 1],  PROTOCOLTASKPRIO,	0, &ProtocolTaskStk[0], PROTOCOLTASKSTKLEN,  (void *)0,  OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);  // 通信协议任务
-	OSTaskCreateExt(NetTask, (void *)0, &NetTaskStk[NETTASKSTKLEN - 1],  NETTASKPRIO,	0, &NetTaskStk[0], NETTASKSTKLEN,  (void *)0,  OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);  // 网络任务
+	OSTaskCreateExt(TaskProtocolHandle, (void *)0, &ProtocolTaskStk[PROTOCOLTASKSTKLEN - 1],  PROTOCOLTASKPRIO,	0, &ProtocolTaskStk[0], PROTOCOLTASKSTKLEN,  (void *)0,  OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR); // 通信协议任务
+	OSTaskCreateExt(NetTask, (void *)0, &NetTaskStk[NETTASKSTKLEN - 1],  NETTASKPRIO,	0, &NetTaskStk[0], NETTASKSTKLEN,  (void *)0,  OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);  // 网络连接任务
 	OSTaskCreateExt(ElmTask, (void *)0, &MeterTaskStk[METERTASKSTKLEN - 1],  METERTASKPRIO,	0, &MeterTaskStk[0], METERTASKSTKLEN,  (void *)0,  OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);  // 电表任务
 	OSTaskCreateExt(CardTask, (void *)0, &CardTaskStk[CARDTASKSTKLEN - 1],  CARDTASKPRIO,	0, &CardTaskStk[0], CARDTASKSTKLEN,  (void *)0,  OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR);  // 卡任务
 	

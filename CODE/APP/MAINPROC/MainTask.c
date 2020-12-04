@@ -3557,8 +3557,6 @@ void BoardRunLedControl(void)
 	}
 }
 
-
-
 /************************************************************************************************************
 ** 函 数 名 : LEDBoardControl
 ** 功能描述 : 三色灯板控制函数
@@ -3848,8 +3846,8 @@ void MainTask(void *pdata)
 		
 		BoardRunLedControl();
 		
-		AnalyseMsgFromDebugPlatform();
-		AnalyseMsgFromUdpPlatform();
+		AnalyseMsgFromDebugPlatform();//串口参数设置和读取
+		AnalyseMsgFromUdpPlatform();//网口参数设置和读取
 		
 		LEDBoardControl();  //三色灯		
 		OSTimeDlyHMSM (0, 0, 0, 10);

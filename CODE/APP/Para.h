@@ -67,7 +67,7 @@ typedef struct{
 }PARAINFO;
 
 typedef struct{
-	uint32_t Updata;  //升级成功标志
+	uint32_t Updata;         //升级成功标志
 	uint16_t Pwm;
 	uint8_t ActPassword[4];
 	uint32_t LimitHour;
@@ -82,10 +82,6 @@ typedef struct{
 	uint32_t InitFlag;  //升级成功标志
 
 }TRICKLEINFO;
-
-
-
-
 
 
 void ParaInit(void);
